@@ -1,221 +1,436 @@
+/* Kick Ass Fonts */
+@font-face{
+  font-family: IntervalBook;
+src: url('/interval/Interval.otf'); }
+
+@font-face{
+  font-family: IntervalBold;
+src: url('/interval/IntervalBold.otf'); }
+
+@font-face{
+  font-family: IntervalSlanted;
+src: url('/interval/IntervalSlanted.otf'); }
+
+@font-face{
+  font-family: IntervalBoldSlanted;
+src: url('/interval/IntervalBoldSlanted.otf'); }
+
+
+/* Global */
+
+	
+body{
+  position: relative;
+  height: 100%;
+  margin: 0;
+  font-family: IntervalBook;
+  font-size: 16px;
+  font-kerning: normal;
+  padding: 10px; }
+  
+.breadcrumb{
+	text-align: right; 
+	font-size: 0.9em; 
+	margin-top: 10px;
+	margin-right: 10px; }
 .container {
   position: relative;
   max-width: 80%;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box; }
- 
+box-sizing: border-box; }
+
 .dancing-zach {
-	max-width: 300px;
-	float: left;
-	clear: left;
-	position: relative;
-	bottom: 0;
-	display: block;
-	margin: 0 10px 10px 0;
-	shape-outside: circle(50%); }
+  max-width: 300px;
+  float: left;
+  clear: left;
+  position: relative;
+  bottom: 0;
+  display: block;
+  margin: 0 10px 10px 0;
+shape-outside: circle(50%); }
 
 .intro-message{
-	width: 100%;
-	margin-top: 4em;
-	margin-bottom: 4em;
-	font-size: 1.1em; }
+  width: 100%;
+  margin-top: 4em;
+  margin-bottom: 4em;
+font-size: 1.1em; }
 
 .contact-list{
-	font-size: 1em;
-	list-style: circle; }
+  font-size: 1em;
+list-style: circle; }
 
 .invisible-helper{
-	width: 0;
-	height: 200px;
-	float: left; }
+  width: 0;
+  height: 200px;
+float: left; }
 
 .placard{
-	height: 100px;
-	max-width: 800px;
-	display: flex;
-	flex-direction: row;
-	border: 3px solid blue; }
+  height: 100px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+border: 3px solid blue; }
 
 .placard-name{
-	display: flex;
-	align-items: center;
-	border-right: 3px solid;
-	width: 25%;
-	padding: 10px 0 10px 10px;
-	font-size: 2em; }
-	
+  display: flex;
+  align-items: center;
+  border-right: 3px solid;
+  width: 25%;
+  padding: 10px 0 10px 10px;
+font-size: 2em; }
+
 .placard-quote{
-	display: flex;
-	align-items: center;
-	font-size: 1.2em;
-	padding: 20px; } 
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+padding: 20px; } 
+
+/* Library
+--------*/
+.starcloud-bg {
+  background-image: url(./images/dark-sky.jpg);
+  background-repeat: repeat-x repeat-y;
+  background-size: contain;
+  color: white;
+  font-family: IntervalBook; }
 
 .library {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 90%;
-	padding: 1em; }
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  padding: 1em; }
 
 .library-shelf {
-	display: grid;
-	border: white dotted 1px;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-gap: 10px; }
+  max-width: 82%;
+  margin: auto;
+  margin-bottom: 40px; 
+  padding-bottom: 20px;
+  border: white dotted 1px; }
 
-.library-title {
-	padding-left: 10px;
-	grid-column: 1 / span 4;
-	font-size: 2em; }
+.book-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px; }
+
+.library-shelf_title {
+  padding: 0.5em;
+  width: 100%;
+  font-size: 2em; }
 
 .library-book {
-	display: flex;
-	flex-direction: column; 
-	justify-content: center; 
-	align-items: center; }
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; }
 
 .library-book_cover{
-	max-width: 200px; }
+  border: white dotted 1px;
+  max-width: 200px; }
 
+figcaption {
+  color: white; 
+  display: block;
+  font-size: 0.9em;
+  padding: 10px;   	
+  text-align: center; }
 
 /*Mosaic of Pages
 ----------------*/
 .my-mosaic{
-	max-width: 82%;
-	margin: auto;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 20px; }
+  max-width: 82%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 20px; }
 
 .tile{
-	height: 100px; 
-	display: flex;
-	flex-direction: row;
-	border: 3px solid; }  
-	
+  height: 100px; 
+  display: flex;
+  flex-direction: row;
+border: 3px solid; }  
+
 .tile-link{
-	display: block;
-	text-decoration: none;
-	color: none; }  
+  display: block;
+  text-decoration: none;
+color: none; }  
 
 .tile-name{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-right: 3px solid;
-	font-size: 1.5em;
-	font-style: italic;
-	padding: 10px;
-	line-height: 1.3em; } 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 3px solid;
+  font-size: 1.5em;
+  font-style: italic;
+  padding: 10px;
+line-height: 1.3em; } 
 
 .tile-description{
-	display: flex;
-	align-items: center;
-	font-size: 1.2em;
-	padding: 20px; } 
- 
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+padding: 20px; } 
+
 /*  Colors!  
-************/
+ ************/
 
 .alice-blue_border{
-	border-color: aliceBlue; }
+border-color: aliceBlue; }
 
 .alice-blue_background{
-	background-color: aliceBlue; }
+background-color: aliceBlue; }
 
 .ink-blue_border{
-	border-color: #4ec3d2; }
+border-color: #4ec3d2; }
 
 .ink-blue_text{
-	color: #5fbcc8; }
+color: #5fbcc8; }
 
 .butter-yellow_border{
-	border-color: rgba(211, 200, 103, 1); }
+border-color: rgba(211, 200, 103, 1); }
 
 .soft-yellow_background{
-	background-color: #e8e8bd; }
+background-color: #e8e8bd; }
 
 .dark-caramel{
-	color: #7e5a2c; }
+color: #7e5a2c; }
 
 .sherbet{
-	color: #e79e0c; }
+color: #e79e0c; }
 
 .sherbet_border{
-	border-color: #d1a54d; }
+border-color: #d1a54d; }
 
 .soft-sherbet_background{
-	background-color: rgba(209, 165, 77, 0.26); }
+background-color: rgba(209, 165, 77, 0.26); }
 
 .friedemann-green_border{
-	border-color: #5fb95a; }
+border-color: #5fb95a; }
 
 .friese-green_background{
-	background-color: #70ff70; }
+background-color: #70ff70; }
 
 .friedemann-green_text{
-	color: green; }
+color: green; }
 
 .rituals_border{
-    color: #000582; }
-   
+color: #000582; }
+
 .rituals_text{
-	color: #000582; }
+color: #000582; }
 
 .rituals_background{
-    background-color: rgba(0, 16, 130, 0.44); }
- 
+background-color: rgba(0, 16, 130, 0.44); }
+
 .book-ribbon_border{
-	border-color: #b23535; }
-	
+border-color: #b23535; }
+
 .book-ribbon_background{
-	background-color: rgba(179, 53, 53, 0.29); }
+background-color: rgba(179, 53, 53, 0.29); }
 
 .friendship-orange_border{
-	border-color: #a66400; }
+border-color: #a66400; }
 .friendship-orange_background{
-	background-color:  rgba(255, 165, 0, 0.61); }
+background-color:  rgba(255, 165, 0, 0.61); }
 
 .friendship-orange_text{
-	color: #a66400; }
+color: #a66400; }
 
 .book-ribbon_text{
-	color: #b23535; }
+color: #b23535; }
 
 .link-blue_border{
-	border-color: blue; }
+border-color: blue; }
 
 .link-blue_background{
-	background-color: rgba(0,  0,  255, 0.28); }
+background-color: rgba(0,  0,  255, 0.28); }
 
 .link-blue_text{
-	color: blue; }
+color: blue; }
 
 /* Media Queries BABYEEE!
-************************/
+ ************************/
 
 @media (max-width: 1100px){
-	.my-mosaic{
-		grid-template-columns: 1fr 1fr; }
-		
-	.tile-description{
-		font-size: 1.1em; }
+  .my-mosaic{
+  grid-template-columns: 1fr 1fr; }
+
+  .book-grid {
+  grid-template-columns: 1fr 1fr; }
+
+  .tile-description{
+  font-size: 1.1em; }
 }
 
 @media (max-width: 667px){
-	.dancing-zach{
-		float: none;
-	}
-	.placard{
-		flex-direction: column;
-		height: auto; }
-	.placard-name{
-		width: auto;
-		border-right: none;
-	}
-	.my-mosaic{
-		grid-template-columns: 1fr; }
-		
-	.tile-description{
-		font-size: 1em; }
+  .dancing-zach{
+  float: none; }
+
+  .placard{
+    flex-direction: column;
+  height: auto; }
+  .placard-name{
+    width: auto;
+    border-right: none;
+  }
+  .my-mosaic{
+  grid-template-columns: 1fr; }
+
+  .tile-description{
+  font-size: 1em; }
+
+  .book-grid {
+  grid-template-columns: 1fr; }
+
+}
+  padding: 10px;   	
+  text-align: center; }
+
+/*Mosaic of Pages
+----------------*/
+.my-mosaic{
+  max-width: 82%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 20px; }
+
+.tile{
+  height: 100px; 
+  display: flex;
+  flex-direction: row;
+border: 3px solid; }  
+
+.tile-link{
+  display: block;
+  text-decoration: none;
+color: none; }  
+
+.tile-name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 3px solid;
+  font-size: 1.5em;
+  font-style: italic;
+  padding: 10px;
+line-height: 1.3em; } 
+
+.tile-description{
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+padding: 20px; } 
+
+/*  Colors!  
+ ************/
+
+.alice-blue_border{
+border-color: aliceBlue; }
+
+.alice-blue_background{
+background-color: aliceBlue; }
+
+.ink-blue_border{
+border-color: #4ec3d2; }
+
+.ink-blue_text{
+color: #5fbcc8; }
+
+.butter-yellow_border{
+border-color: rgba(211, 200, 103, 1); }
+
+.soft-yellow_background{
+background-color: #e8e8bd; }
+
+.dark-caramel{
+color: #7e5a2c; }
+
+.sherbet{
+color: #e79e0c; }
+
+.sherbet_border{
+border-color: #d1a54d; }
+
+.soft-sherbet_background{
+background-color: rgba(209, 165, 77, 0.26); }
+
+.friedemann-green_border{
+border-color: #5fb95a; }
+
+.friese-green_background{
+background-color: #70ff70; }
+
+.friedemann-green_text{
+color: green; }
+
+.rituals_border{
+color: #000582; }
+
+.rituals_text{
+color: #000582; }
+
+.rituals_background{
+background-color: rgba(0, 16, 130, 0.44); }
+
+.book-ribbon_border{
+border-color: #b23535; }
+
+.book-ribbon_background{
+background-color: rgba(179, 53, 53, 0.29); }
+
+.friendship-orange_border{
+border-color: #a66400; }
+.friendship-orange_background{
+background-color:  rgba(255, 165, 0, 0.61); }
+
+.friendship-orange_text{
+color: #a66400; }
+
+.book-ribbon_text{
+color: #b23535; }
+
+.link-blue_border{
+border-color: blue; }
+
+.link-blue_background{
+background-color: rgba(0,  0,  255, 0.28); }
+
+.link-blue_text{
+color: blue; }
+
+/* Media Queries BABYEEE!
+ ************************/
+
+@media (max-width: 1100px){
+  .my-mosaic{
+  grid-template-columns: 1fr 1fr; }
+
+  .book-grid {
+  grid-template-columns: 1fr 1fr; }
+
+  .tile-description{
+  font-size: 1.1em; }
+}
+
+@media (max-width: 667px){
+  .dancing-zach{
+  float: none; }
+
+  .placard{
+    flex-direction: column;
+  height: auto; }
+  .placard-name{
+    width: auto;
+    border-right: none;
+  }
+  .my-mosaic{
+  grid-template-columns: 1fr; }
+
+  .tile-description{
+  font-size: 1em; }
+
+  .book-grid {
+  grid-template-columns: 1fr; }
+
 }

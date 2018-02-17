@@ -5,7 +5,7 @@
     
 @font-face{
     font-family: IntervalBold;
-    src: url('/iInterval/IntervalBold.otf'); }
+    src: url('/interval/IntervalBold.otf'); }
 
 @font-face{
     font-family: IntervalSlanted;
@@ -463,12 +463,12 @@ code{
 	 font-size: 20px;
 	 font-family: monospace; }
 	 
-.starcloud-bg {
-	background-image: url(/images/dark-sky.jpg);
+starcloud-bg {
+	background-image: url(./images/dark-sky.jpg);
 	background-repeat: repeat-x repeat-y;
 	background-size: contain;
 	color: white;
-    font-family: IntervalBook; }
+        font-family: IntervalBook; }
 
 .starcloud-notes {
 	background-image: url(/images/dark-sky.jpg);
