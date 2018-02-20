@@ -1,7 +1,7 @@
 /* Kick Ass Fonts */
 @font-face{
   font-family: IntervalBook;
-src: url('/interval/Interval.otf'); }
+src: url('./interval/Interval.otf'); }
 
 @font-face{
   font-family: IntervalBold;
@@ -29,16 +29,20 @@ body{
   padding: 10px; }
   
 .breadcrumb{
-	text-align: right; 
-	font-size: 0.9em; 
-	margin-top: 10px;
-	margin-right: 10px; }
+  text-align: right; 
+  font-size: 0.9em; 
+  margin-top: 10px;
+  margin-right: 10px; }
+
+.left {
+  text-align: left; }
+
 .container {
   position: relative;
   max-width: 80%;
   margin: 0 auto;
   padding: 0 20px;
-box-sizing: border-box; }
+  box-sizing: border-box; }
 
 .dancing-zach {
   max-width: 300px;
@@ -135,6 +139,29 @@ figcaption {
   padding: 10px;   	
   text-align: center; }
 
+.library-notes {
+  background-image: url(./images/dark-sky.jpg);
+  background-repeat: repeat-x repeat-y;
+  background-size: cover;
+  color: white;
+  font-family: IntervalBook; }
+
+.notes-thumbnail {
+  float: left; 
+  width: 200px;
+  margin-top: 1.5em;
+  margin-right: 1em; }
+
+.notes{
+  min-height: 400px;
+  width: 82%;
+  margin: auto;
+  text-align: justify;
+  border: 1px dashed white;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  font-size: 1.5em; }
+
 /*Mosaic of Pages
 ----------------*/
 .my-mosaic{
@@ -171,7 +198,7 @@ line-height: 1.3em; }
   font-size: 1.2em;
 padding: 20px; } 
 
-/*  Colors!  
+/* Colors!  
  ************/
 
 .alice-blue_border{
@@ -188,6 +215,9 @@ color: #5fbcc8; }
 
 .butter-yellow_border{
 border-color: rgba(211, 200, 103, 1); }
+
+.butter-yellow{
+  color: rgba(211, 200, 103, 1); }
 
 .soft-yellow_background{
 background-color: #e8e8bd; }
@@ -398,6 +428,7 @@ background-color: rgba(0,  0,  255, 0.28); }
 
 .link-blue_text{
 color: blue; }
+
 
 /* Media Queries BABYEEE!
  ************************/
