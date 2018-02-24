@@ -1,19 +1,19 @@
 /* Kick Ass Fonts */
 @font-face{
   font-family: IntervalBook;
-src: url('./interval/Interval.otf'); }
+src: url('../../interval/Interval.otf'); }
 
 @font-face{
   font-family: IntervalBold;
-src: url('./interval/IntervalBold.otf'); }
+src: url('../interval/IntervalBold.otf'); }
 
 @font-face{
   font-family: IntervalSlanted;
-src: url('./interval/IntervalSlanted.otf'); }
+src: url('../interval/IntervalSlanted.otf'); }
 
 @font-face{
   font-family: IntervalBoldSlanted;
-src: url('./interval/IntervalBoldSlanted.otf'); }
+src: url('../interval/IntervalBoldSlanted.otf'); }
 
 
 /* Global */
