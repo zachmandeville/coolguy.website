@@ -27,7 +27,12 @@ body{
   font-size: 16px;
   font-kerning: normal;
   padding: 10px; }
-  
+
+ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
 .breadcrumb{
   text-align: right; 
   font-size: 0.6em; 
@@ -76,7 +81,7 @@ shape-outside: circle(50%); }
   width: 100%;
   margin-top: 4em;
   margin-bottom: 4em;
-font-size: 1.1em; }
+  font-size: 1.3em; }
 
 .contact-list{
   font-size: 1em;
@@ -116,6 +121,23 @@ border: 3px solid blue; }
   padding: 20px; } 
 .placard-quote.write{
   color: var(--ink-blue_text); }
+
+.log-title{
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.rss-link{
+  max-height: 2em;
+  margin-left: 18px; }
+
+.log{
+  max-width: 82%;
+  font-size: 1.3em;
+  margin: 40px auto 40px auto; }
+
+.log-li{
+  margin-bottom: 1.3em; }
 
 /* Library
 --------*/
@@ -232,8 +254,14 @@ padding: 20px; }
 
 .writing{
   background-color: aliceBlue;
-  font-size: 1.3em;
+  font-size: 1.5em;
+  line-height: 1.5em;
   text-align: left; }
+  @media (max-width: 667px){
+	  .writing{
+		  font-size: 1em;
+	  }
+  }
 							    
 .writing-collection {
   width: 75%;
@@ -243,6 +271,11 @@ padding: 20px; }
  font-size: 1.2em;
  color: var(--orange-dust);
  text-decoration: none; }
+ @media (max-width: 667px){
+	 .writing-name {
+		 font-size: 1.1em;
+	 }
+ }
 
 .writing-piece_titlebox{
   min-height: 75px;
@@ -254,6 +287,7 @@ padding: 20px; }
   border-bottom: 2px solid var(--ink-blue_text); }	
   @media (max-width: 667px) {
 	  .writing-piece_titlebox {
+		  min-height: 0;
 		  font-size: 1.7em;
 	  }
   }
@@ -267,7 +301,8 @@ padding: 20px; }
   
 .writing-piece_title{
   padding-top: 5px;
-  color: var(--orange-dust); }
+  color: var(--orange-dust);
+  line-height: 1.5em; }
 
 .writing-piece_byline{
   text-align: right;
@@ -276,7 +311,7 @@ padding: 20px; }
   color: var(--purple-dusk); }
 
 .writing-piece{
-  word-spacing: -0.1em;
+  word-spacing: -0.2em;
   margin-top: 2em; }
 
 
@@ -395,4 +430,3 @@ color: blue; }
 
   .book-grid {
   grid-template-columns: 1fr; }
-
