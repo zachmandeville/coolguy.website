@@ -4,10 +4,51 @@
  *---------------------------------------------*/
 
 :root {
-  --orange-dust: #db8d69;
+  --bg-color:#f1bdfe;
+  --main-text: #5d3e5d;
+
+  --placard-bg: #c4f7bc;
+  --placard-border: #b0c8b0;
+  --placard-text: #717271;
+
+  --writing-bg: lightblue;
+  --writing-border: #aba5d1;
+  --writing-text: #726e8a;
+
+  --rituals-bg: #8c438c;
+  --rituals-border: #956695;
+  --rituals-text: #52305d;
+
+  --diary-mosaic-bg: #edc885; 
+  --diary-mosaic-border: #db8d69;
+  --diary-mosaic-text: #c88a1a;
+
+  --boardgame-mosaic-border: #5fb95a;
+  --boardgame-mosaic-bg: #70ff70;
+  --boardgame-mosaic-text: #297229;
+
+  --library-mosaic-border: #b23535;
+  --library-mosaic-bg: rgba(179, 53, 53, 0.29);
+  --library-mosaic-text: #b23535;
+
+  --movies-mosaic-border: rgba(211, 200, 103, 1);
+  --movies-mosaic-bg: #efef7f;
+  --movies-mosaic-text:#73773d;
+
+  --friends-mosaic-border: #a66400;
+  --friends-mosaic-bg: rgba(255, 165, 0, 0.61);
+  --friends-mosaic-text: #a66400;
+
+  --links-mosaic-border: blue;
+  --links-mosaic-bg: rgba(0,  0,  255, 0.28); 
+  --links-mosaic-text: blue;
+ 
+
   --paper-pad: #d6ecff;
   --ink-blue_text: #5fbcc8;
   --purple-dusk: #6c448a;
+  --diary-bg: lavender;
+  --diary-text: #000282;
 }
 
 

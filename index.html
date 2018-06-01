@@ -1,153 +1,174 @@
 <!doctype HTML>
 <!-- coolguy.website homepage -->
-
-<!-- That sweet opening Splash -->
+<!-- 
+  Hey!  Thanks for visiting this source code!  You are now 'one of the cool ones'.
+  I'll give you a tour of sorts with these comments if you keen.
+-->
 <html>
   <head>
     <title>Zach Mandeville</title>
+    <!-- 
+      Here's some meta deets to have the page be responsive, and have all my text display correctly.
+      Without the charset meta stuff, quotation marks show up as &quot; and no one likes that.
+    -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content = "width=device=width, initial-scale=1">
+    <!-- 
+      Here's some meta deets for search engines and when the coolguy link is shared by others.  So it
+      makes that link look all pretty on facebook and twitter and messaging apps and such.
+    -->
+    <meta name='author' content='yr friend and mine Zach Mandeville!'>
+    <meta name='description' content='The online garden  of writer, developer, solarpunk, and friend
+    Zach Mandeville.'> 
+    <!-- the facebook stuff -->
+    <meta property="og:title" content="Coolguy.Website: Zach Mandeville's Digital Home" />
+    <meta property="og:type" content="website" />
+    <meta name='description' content='The online garden  of writer, developer, solarpunk, and friend
+    Zach Mandeville.'>
+    <meta property="og:image"
+	  content="https://coolguy.website/images/zach-dancing-with-robot.gif"
+   />
+    <meta property="og:url" content="https://coolguy.website/" />
+    <!-- Now the Twitter stuff -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Coolguy.Website: Zach Mandeville's Digital Home" />
+    <meta name='twitter:description' content='The online garden  of writer, developer, solarpunk, and friend
+    Zach Mandeville.'>
+    <meta name="twitter:image"
+	  content="https://coolguy.website/images/zach-dancing-with-robot.gif"
+   />
+    <!-- Meta is done, now we can add that sweet styling! -->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <style type="text/css">
-.sweet #immediacy { display: none;}
-    </style>
-    <script type="text/javascript">
-document.documentElement.className = 'sweet';
-    </script>
+    <link rel='stylesheet' type='text/css' href='styles/colors.css'>
   </head>
   <body>
-    <div id="immediacy">
 
-      <section id="guiding-quote">
-	<p style="text-align: right; font-size: 11px;"> 'That is happiness; to be dissolved into something complete and great.'</p>
-      </section>
+    <section id="title">
+      <p id="guiding-quote"> 'That is happiness; to be dissolved into something complete and great.'</p>
+      <div class="placard">
+	<div class="placard-name">Zach Mandeville</div>
+	<div class="placard-quote">Residing so peacefully here in his digital home.</div>
+      </div>
+    </section>
 
-      <section id="name">
-	<div class="placard link-blue_border">
-	  <div class="placard-name link-blue_background link-blue_text">Zach Mandeville</div>
-	  <div class="placard-quote link-blue_text">Residing so peacefully here in his digital home.</div>
-	</div>
-      </section>
-
-      <section id="introduction">
-	<div class="container">
-	  <div class="intro-message">
-	    <img src="images/zach-dancing.gif" class="dancing-zach">
-	    <p>Hi! My name is Zach and this is a pleasant ornamental garden of a site!  Feel free to explore and hang out and enjoy whatever you find!</p>
-	    <p> Also:</p>
-	    <strong><em><a href="introduction.html">Check out my handy getting-started guide!</a></em></strong></p>
-	    <p> If you want to reach out to me you can, in a number of ways!  Some of these include:</p>
-	    <ul class="contact-list">
-	      <li class="log-li">You can email me at <strong>webmaster😎coolguy😉website</strong>.</li>
-	      <p><em>My pgp/gpg key is <code>63E3 E373 A540 C80F 24CE  F28D DF7F 6DC0 F2A4 53E5</code></em></p>
-	      <li class="log-li">I am active on the beautiful solarpunk wonderland of <a href="http://scuttlebutt.nz">Scuttlebutt</a>, where I'm known as Zach!</li> 
-	      <p><em>My scuttlebutt public key is <code>@ZqH7Mctu/7DNInxuwl12ECjfrAKUX2tBLq1rOldNhg0=.ed25519</code></em></p>
-	      <li class="log-li">You can check out my github at <a href="http://github.com/zachmandeville">github.com/zachmandeville</a></li>
-	      <li class="log-li">you can reach me by phone, if you want.</li>
-	      <li class="log-li">If you see me on the street and I don't look busy or upset, just wave and say &#8220;Hey! ZACH! I wanna reach out to you!&#8221;  I will cross the street to talk to you.</li>
-	    </ul>
-	    <p>I like talking about music, comedy, books, tarot, board games, solarpunk, the beauty of a tech-enriched animist future, Mtv's The Challenge, and your day.</p>
-	  </div>
-	</div>
-    </div>
-      </section>
-
-      <section id="navigation">
-	<ul class="my-mosaic">
-	  <li><a class="tile-link" title="Writing" href="writing/index.html">
-	      <div class="tile ink-blue_border">
-		<div class="tile-name alice-blue_background ink-blue_text">Writing</div>
-		<div class="tile-description ink-blue_text">All the things I wrote for you and about you.</div>
-	      </div>
-	    </a>
-	  </li>
-	  <li>
-	    <a class="tile-link" title="Solarpunk Magic" href="rituals/index.html">
-	      <div class="tile rituals_border">
-		<div class="tile-name rituals_border rituals_background rituals">Solarpunk Magic</div>
-		<div class="tile-description rituals_text">Rituals for the Computer and the Earth</div>
-	      </div>
-	    </a>  
-	  </li>
-	  <li>
-	    <a class="tile-link" title="Diary" href="https://diary.coolguy.website">
-	      <div class="tile sherbet_border">
-		<div class="tile-name sherbet_border soft-sherbet_background sherbet">Diary</div>
-		<div class="tile-description sherbet">Personal Feelings as they come up!</div>
-	      </div>
-	    </a>
-	  </li>
-	  <li>
-	    <a class="tile-link" title="Boardgames" href="boardgames/index.html">
-	      <div class="tile friedemann-green_border">
-		<div class="tile-name friedemann-green_border friese-green_background friedemann-green_text">Boardgames</div>
-		<div class="tile-description friedemann-green_text">Boardgame Library of the Cyber Mesa</div>
-	      </div>
-	    </a>
-	  </li>
-	  <li>
-	    <a class="tile-link" title="Library" href="library/index.html">
-	      <div class="tile book-ribbon_border">
-		<div class="tile-name book-ribbon_background book-ribbon_border book-ribbon_text">Library</div>
-		<div class="tile-description book-ribbon_text">The bookshelves of the Cyber Mesa.</div>
-	      </div>
-	    </a>
-	  </li>
-	  <li>
-	    <a class="tile-link" title="Movies I want to See" href="movies-i-want-to-see.html">
-	      <div class="tile butter-yellow_border">
-		<div class="tile-name butter-yellow_border soft-yellow_background dark-caramel">Movies I Want to See</div>
-		<div class="tile-description dark-caramel"> Movies that I haven't seen yet, but wish to see.</div>
-	      </div>
-	    </a>
-	  </li>
-	  <li>
-	    <a class="tile-link" title="Friends" href="my-friends.html">
-	      <div class="tile friendship-orange_border">
-		<div class="tile-name friendship-orange_border friendship-orange_background friendship-orange_text">Friends</div>
-		<div class="tile-description friendship-orange_text">A List of all my Friends.</div>
-	      </div>
-	    </a>
-	  </li>
-	  <li>
-	    <a class="tile-link" title="Links" href="links/index.html">
-	      <div class="tile link-blue_border">
-		<div class="tile-name  link-blue_border link-blue_background link-blue_text">Links</div>
-		<div class="tile-description link-blue_text">A classic collection of good things.</div>
-	      </div>
-	    </a>
-	  </li>
-	  </div>
-      </section>
-      <!-- The Mosaic is Done -->
-
-      <!-- Updates! -->
-      <section id ="Updates" class="log">
-	<div class="log-title">
-	  <h1>Update Log</h1><a href="updates.xml"><img src="images/rss.png" class="rss-link"></a>
-	</div>
-	<ul>
-	  <li class="log-li">Now that I have new styles for the writing page, I wanted to add a bit more writing to it!  So on Saturday, I added &quotThe Bookshelf&quot, &quotClear Skin for an Unclear World&quot, and &quotGoing to the Media Party...&quot.  Check them all out on the <a href="writing/index">Writing page!</a></li>
-	  <li class="log-li">This is a bit harder to see, but I started DRASTICALLY updating my CSS.  I want it all to be cleaner and more understandable in the organization.  My hope is to completetly remove the old stylesheet, and have a new stylesheet that is hundreds of lines of less code.  Let's see how it goes!!!</li>
-	  <li class="log-li">On Saturday, I completely overhauled the writing page so that it looks nice with the BIG fonts (i'm super into big fonts now.) It also has a slightly softer background-color (I need to figure out how to make my site not hurt my eyes.)</li>
-	  <li class="log-li">Also on Wednesday, I added <a href="rituals/productivity-tips-from-plant-life.html">Productivity Tips from Plant Life</a> to the <a href="rituals/index.html">Rituals page.</a>  It's a method I'm exploring to help with my own personal work and intentions.  Take from it what you'd like as you'd like!</li>
-	  <li class="log-li">On Wednesday I put up <a href="writing/the-future-will-be-technical/">The Future Will be Technical</a>, a longer essay on the writing page.  It's kind of a manifesto?  Feel like I keep writing manifestos</li>
-	  <li class="log-li">Late Saturday night, I also wrote a new <a href="https://diary.coolguy.website/2017/11/04/preludes.html">diary entry</a> about magic Novembers.  It's got a bunch of mixed metaphors.  Or rather, it's like a mixtape of metaphors.</li>
-	  <li class="log-li">I finished a book and added it to my <a href="library/index.html">bookshelf</a>, then added short notes for some of the books on the shelf.  This would have been on Saturday night.</li>
-	  <li class="log-li">On Monday night I added a <a href="links/index.html">links</a> page and some more friends!</li>
-	  <li class="log-li">In the end of September I added a rituals section, including a ritual I did for enchanting yourself and yr computer.</li>
-	  <li class="log-li">I removed my dependence on fontlibrary.org.  I depend on no other website now! I also cleaned up a bunch of CSS.  You can tell both because everything runs much <em>faster</em> now</li>
-	  <li class="log-li">On Wednesday I created this log!</li>
-	  <li class="log-li">I wrote a new blog post on Tuesday night.  read it <a href="https://diary.coolguy.website">here</a></li>
-	  <li class="log-li">I created the <a href=library.html>Library</a> on Monday</li>
+    <section id="introduction">
+      <div class="intro-message">
+	<img src="images/zach-dancing-with-robot.gif" class="dancing-zach">
+	<p>Hi! My name is Zach and this is a pleasant ornamental garden of a site!  Feel free to explore and hang out and enjoy whatever you find!</p>
+	<p> Please: <strong><em><a href="introduction.html">Check out my handy getting-started guide!</a></em></strong></p>
+	<h1 style='background-color: var(--placard-bg)'>Contacting Me!</h1>
+	<p> If you want to reach out to me you can, in a number of ways!</p>
+	<p>Some of these include:</p>
+	<ul class="contact-list">
+	  <li class='contact'>You can email me at <strong>webmaster😎coolguy😉website</strong>.<button onclick="showKey('pgp')">🗝</button></li>
+	  <li id='pgp' class='hidden'><em>My pgp/gpg key is <code>63E3 E373 A540 C80F 24CE  F28D DF7F 6DC0 F2A4 53E5</code></em></li>
+	  <li>I am active on the beautiful solarpunk wonderland of <a href="http://scuttlebutt.nz">Scuttlebutt</a>, where I'm known as Zach!<button onclick="showKey('ssb')">🗝</button></li> 
+	  <li id='ssb' class='hidden'><em>My scuttlebutt public key is <code>@ZqH7Mctu/7DNInxuwl12ECjfrAKUX2tBLq1rOldNhg0=.ed25519</code></em></li>
+	  <li>You can check out my github at <a href="http://github.com/zachmandeville">github.com/zachmandeville</a></li>
+	  <li>you can reach me by phone, if you want.</li>
+	  <li>If you see me on the street and I don't look busy or upset, just wave and say &#8220;Hey! ZACH! I wanna reach out to you!&#8221;  I will cross the street to talk to you.</li>
 	</ul>
-      </section>
+	<p>I like talking about music, comedy, books, tarot, board games, solarpunk, the beauty of a tech-enriched animist future, Mtv's The Challenge, and your day.</p>
+      </div>
+    </section>
 
-      <!-- A useful Script! -->
-      <script type="text/javascript">
-document.getElementById("immediacy").style.display="block";
-      </script>
-      <!-- End those scripts and bring us on home -->
+    <section id="navigation">
+<!--    <h1>SITE MAP!</h1> -->
+      <ul class="my-mosaic">
+	<li id='writing-mosaic'><a title="Writing" href="writing/index.html">
+	    <div class="tile">
+	      <h2>Writing</h2>
+	      <p>All the things I wrote for you and about you.</p>
+	    </div>
+	  </a>
+	</li>
+	<li id='rituals-mosaic'><a title="Solarpunk Magic" href="rituals/index.html">
+	    <div class="tile">
+	      <h2>Solarpunk Magic</h2>
+	      <p>Rituals for the Computer and the Earth</p>
+	    </div>
+	  </a>  
+	</li>
+	<li id='diary-mosaic'>
+	  <a title="Diary" href="https://coolguy.website/diary.html">
+	    <div class="tile">
+	      <h2>Diary</h2>
+	      <p>Personal Feelings as they come up!</p>
+	    </div>
+	  </a>
+	</li>
+	<li id='boardgame-mosaic'>
+	  <a title="Boardgames" href="boardgames/index.html">
+	    <div class="tile">
+	      <h2>Boardgames</h2>
+	      <p>Boardgame Library of the Cyber Mesa</p>
+	    </div>
+	  </a>
+	</li>
+	<li id='library-mosaic'>
+	  <a title="Library" href="library/index.html">
+	    <div class="tile">
+	      <h2>Library</h2>
+	      <p>The bookshelves of the Cyber Mesa.</p>
+	    </div>
+	  </a>
+	</li>
+	<li id='movies-mosaic'>
+	  <a title="Movies I want to See" href="movies-i-want-to-see.html">
+	    <div class="tile">
+	      <h2>Movies I Want to See</h2>
+	      <p> Movies that I haven't seen yet, but wish to see.</p>
+	    </div>
+	  </a>
+	</li>
+	<li id='friends-mosaic'>
+	  <a title="Friends" href="my-friends.html">
+	    <div class="tile">
+	      <h2>Friends</h2>
+	      <p>A List of all my Friends.</p>
+	    </div>
+	  </a>
+	</li>
+	<li id='links-mosaic'>
+	  <a title="Links" href="links/index.html">
+	    <div class="tile">
+	      <h2>Links</h2>
+	      <p>A classic collection of good things.</p>
+	    </div>
+	  </a>
+	</li>
+    </section>
+    <!-- The Mosaic is Done -->
+
+    <!-- Updates! -->
+    <section id ="Updates" class="log">
+      <div class="log-title">
+	<h1>Update Log</h1><a href="updates.xml"><img src="images/rss.png" class="rss-link"></a>
+      </div>
+      <ul>
+	<li class="log-li">Now that I have new styles for the writing page, I wanted to add a bit more writing to it!  So on Saturday, I added &quotThe Bookshelf&quot, &quotClear Skin for an Unclear World&quot, and &quotGoing to the Media Party...&quot.  Check them all out on the <a href="writing/index">Writing page!</a></li>
+	<li class="log-li">This is a bit harder to see, but I started DRASTICALLY updating my CSS.  I want it all to be cleaner and more understandable in the organization.  My hope is to completetly remove the old stylesheet, and have a new stylesheet that is hundreds of lines of less code.  Let's see how it goes!!!</li>
+	<li class="log-li">On Saturday, I completely overhauled the writing page so that it looks nice with the BIG fonts (i'm super into big fonts now.) It also has a slightly softer background-color (I need to figure out how to make my site not hurt my eyes.)</li>
+	<li class="log-li">Also on Wednesday, I added <a href="rituals/productivity-tips-from-plant-life.html">Productivity Tips from Plant Life</a> to the <a href="rituals/index.html">Rituals page.</a>  It's a method I'm exploring to help with my own personal work and intentions.  Take from it what you'd like as you'd like!</li>
+	<li class="log-li">On Wednesday I put up <a href="writing/the-future-will-be-technical/">The Future Will be Technical</a>, a longer essay on the writing page.  It's kind of a manifesto?  Feel like I keep writing manifestos</li>
+	<li class="log-li">Late Saturday night, I also wrote a new <a
+     href="https://coolguy.website/diary.html">diary entry</a> about magic Novembers.  It's got a bunch of mixed metaphors.  Or rather, it's like a mixtape of metaphors.</li>
+	<li class="log-li">I finished a book and added it to my <a href="library/index.html">bookshelf</a>, then added short notes for some of the books on the shelf.  This would have been on Saturday night.</li>
+	<li class="log-li">On Monday night I added a <a href="links/index.html">links</a> page and some more friends!</li>
+	<li class="log-li">In the end of September I added a rituals section, including a ritual I did for enchanting yourself and yr computer.</li>
+	<li class="log-li">I removed my dependence on fontlibrary.org.  I depend on no other website now! I also cleaned up a bunch of CSS.  You can tell both because everything runs much <em>faster</em> now</li>
+	<li class="log-li">On Wednesday I created this log!</li>
+	<li class="log-li">I wrote a new blog post on Tuesday night.  read it <a
+     href="https://coolguy.website/diary.html">here</a></li>
+	<li class="log-li">I created the <a href=library.html>Library</a> on Monday</li>
+      </ul>
+    </section>
+  <script>
+    function showKey (id) {
+      document.getElementById(id).classList.toggle('hidden')
+    }
+  </script>
   </body>
   <html>
-<!-- Thank you for reading this source code! -->
+    <!-- Thank you for reading this source code! -->
+

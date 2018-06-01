@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<!-- OH HEY!  Welcome to the RSS FEED LINK!
+=======================
+*INSTRUCTIONS FOR USE!*
+=======================
+
+This page is if you want to keep up with updates from my website through an RSS feed reader.  
+So if you've chosen one you like, you can simply subscribe to my updates by copying the url above and placing it 
+in the subscribe box of your reader.  That url again, just for convenience, is https://coolguy.website/updates.xml .
+
+For feed readers, I am using theoldreader.com cos it's simple and easy to set up.  
+It does require a login, however, and while free they do push you to get a premium version.
+
+If you'd like a list of other free, open-source readers that can be self-hosted
+(meaning you can run the reader on your own server if you'd like), check out this page:
+
+https://github.com/Kickball/awesome-selfhosted#feed-readers
+
+I think that's  it!  Enjoy!
+
+~~~END HELPFUL TRANSMISSION~~~ -->
+
+<channel>
+  <title>Coolguy.Website Updates!</title>
+  <link>https://coolguy.website</link>
+  <image>
+    <url>https://coolguy.website/images/zach-dancing.gif</url>
+    <link>https://coolguy.website</link>
+  </image>
+  <category>Personal</category>
+  <language>en-us</language>
+  <description>A Feed of Recent changes to the site.  View the page source for helpful instructions!</description>
+
+  <item>
+    <title>New Writing from the Vault!</title>
+    <link>https://coolguy.website/writing</link>
+    <description>Now that I have new styles for the writing page, I wanted to add a bit more writing to it!  So on Saturday, I added "The Bookshelf", "Clear Skin for an Unclear World", and "Going to the Media Party...".  Check them all out on the Writing page!</description>
+  </item>
+
+  <item>
+    <title>Fancier Styles all around!</title>
+    <link>https://coolguy.website/styles/main.css</link>
+    <description>This is a bit harder to see, but I started DRASTICALLY updating my CSS.  I want it all to be cleaner and more understandable in the organization.  My hope is to completetly remove the old stylesheet, and have a new stylesheet that is hundreds of lines of less code.  Let's see how it goes!!!</description>
+  </item>
+
+  <item>
+    <title>Updated Writing Page</title>
+    <link>https://coolguy.website/writing/</link>
+    <description>I've completely overhauled the writing page so that it looks nice with the BIG fonts (i'm super into big fonts now.) It also has a slightly softer background-color (I need to figure out how to make my site not hurt my eyes.)
+    </description>
+  </item>
+
+  <item>
+    <title>New Plant-Based Ritual</title>
+    <link>https://coolguy.website/rituals/productivity-tips-from-plant-life.html</link>
+    <description>
+      Also on Wednesday, I added Productivity Tips from Plant Life to the Rituals page. It's a method I'm exploring to help with my own personal work and intentions.  Take from it what you'd like as you'd like!
+    </description>
+  </item>
+  <item>
+    <title>The Future Will Be Technical, an Optimistic Manifesto!</title>
+    <link>https://coolguy.website/writing/the-future-will-be-technical/</link>
+    <description>
+      On Wednesday I put up The Future Will be Technical, a longer essay on the writing page.  It's kind of a manifesto?  Feel like I keep writing manifestos
+    </description>
+  </item>
+</channel>
+</rss>

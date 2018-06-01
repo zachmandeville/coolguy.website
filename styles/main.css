@@ -1,11 +1,11 @@
 /* Kick Ass Fonts */
 @font-face{
   font-family: IntervalBook;
-src: url('../../interval/Interval.otf'); }
+src: url('../interval/Interval.otf'); }
 
 @font-face{
   font-family: IntervalBold;
-src: url('../interval/IntervalBold.otf'); }
+src: url('../../interval/IntervalBold.otf'); }
 
 @font-face{
   font-family: IntervalSlanted;
@@ -16,56 +16,235 @@ src: url('../interval/IntervalSlanted.otf'); }
 src: url('../interval/IntervalBoldSlanted.otf'); }
 
 
-/* Global */
+/* Global Styles */
 
-	
 body{
+  cursor: url(ani.png);
   position: relative;
   height: 100%;
+  background-color: var(--bg-color);
+  color: var(--main-text);
   margin: 0;
   font-family: IntervalBook;
   font-size: 16px;
   font-kerning: normal;
-  padding: 10px; }
+  padding: 10px; 
+}
+
+#guiding-quote{
+  text-align: right;
+  font-size: 11px;
+}
+
+.key-icon {
+  width=39px;
+}
+
+.hidden{
+  display: none;
+}
+
+.intro-message{
+  width: 80%;
+  margin-top: 4em;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px;
+font-size: 1.3em; }
+
+.intro-message h1 {
+  margin-top: 1em;
+  background-color: var(--placard-bg);
+  line-height: 1.5em;
+  font-size: 1.2em; 
+}
+
+button {
+  width: auto;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
 
 ul,li{
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+}
+
+/*Mosaic of Pages: 
+The homepage sitemap, if you will
+----------------*/
+.my-mosaic{
+  max-width: 82%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px; 
+}
+
+.my-mosaic a{
+  display: block;
+  text-decoration: none;
+  color: none;
+}  
+
+.tile {
+  height: 100px; 
+  display: flex;
+  flex-direction: row;
+  border: 3px solid;
+}  
+
+.tile h2 {
+  height: 100%;
+  margin: 0;
+  padding-bottom: 0;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 3px solid;
+  font-style: italic;
+} 
+
+.tile p {
+  background-color: lavender;
+  height: 100%;
+  padding: 0; 
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+/* All the sweet colors per tile
+-------------------------------*/
+
+#writing-mosaic div{
+  border-color: var(--writing-border);
+  color: var(--writing-text);
+}
+
+#writing-mosaic h2{
+  color: var(--writing-text);
+  background-color: var(--writing-bg);
+  border-color: var(--writing-border);
+}
+
+#rituals-mosaic div{
+  border-color: var(--rituals-border);
+  color: var(--rituals-text);
+}
+
+#rituals-mosaic h2 {
+  color: var(--rituals-text);
+  background-color: var(--rituals-bg);
+  border-color: var(--rituals-border);
+}
+
+#diary-mosaic div {
+  color: var(--diary-mosaic-text);
+  border-color: var(--diary-mosaic-border); 
+}
+
+#diary-mosaic h2 {
+  background-color: var(--diary-mosaic-bg);
+  border-color: var(--diary-mosaic-border); 
+}
+
+#boardgame-mosaic div{
+  color: var(--boardgame-mosaic-text);
+  border-color: var(--boardgame-mosaic-border); 
+}
+
+#boardgame-mosaic h2{
+  background-color: var(--boardgame-mosaic-bg);
+  border-color: var(--boardgame-mosaic-border); 
+}
+
+#library-mosaic div{
+  color: var(--library-mosaic-text);
+  border-color: var(--library-mosaic-border); 
+}
+
+#library-mosaic h2{
+  background-color: var(--library-mosaic-bg);
+  border-color: var(--library-mosaic-border); 
+}
+
+#movies-mosaic div{
+  color: var(--movies-mosaic-text);
+  border-color: var(--movies-mosaic-border); 
+}
+
+#movies-mosaic h2{
+  background-color: var(--movies-mosaic-bg);
+  border-color: var(--movies-mosaic-border); 
+}
+
+#friends-mosaic div{
+  color: var(--friends-mosaic-text);
+  border-color: var(--friends-mosaic-border); 
+}
+
+#friends-mosaic h2{
+  background-color: var(--friends-mosaic-bg);
+  border-color: var(--friends-mosaic-border); 
+}
+
+#links-mosaic div{
+  color: var(--links-mosaic-text);
+  border-color: var(--links-mosaic-border); 
+}
+
+#links-mosaic h2{
+  background-color: var(--links-mosaic-bg);
+  border-color: var(--links-mosaic-border); 
+}
+
 
 .breadcrumb{
   text-align: right; 
-  font-size: 0.6em; 
+  font-size: 1em; 
   margin-top: 10px;
-  margin-right: 10px; }
+margin-right: 10px; }
 
 .cool-link{
-  text-decoration: none; }
+text-decoration: none; }
 .cool-link.writing{
   font-size: inherit;
-  color: var(--orange-dust); }
+color: var(--orange-dust); }
 
 .left {
-  text-align: left; }
+text-align: left; }
 
 .container {
   position: relative;
   max-width: 80%;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box; }
-  @media (max-width: 667px){
-    .container{
-      max-width: 100%; }
-  }
+box-sizing: border-box; }
+@media (max-width: 667px){
+  .container{
+  max-width: 100%; }
+}
+
 
 .centered{
-  text-align: center; }
+text-align: center; }
 
 .centered-image {
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+margin-right: auto; }
 
 .dancing-zach {
   max-width: 300px;
@@ -77,67 +256,75 @@ ul,li{
   margin: 0 10px 10px 0;
 shape-outside: circle(50%); }
 
-.intro-message{
-  width: 100%;
-  margin-top: 4em;
-  margin-bottom: 4em;
-  font-size: 1.3em; }
-
+#pgp, #ssb{
+  background-color: var(--placard-bg);
+}
 .contact-list{
   font-size: 1em;
 list-style: circle; }
 
-.invisible-helper{
-  width: 0;
-  height: 200px;
-float: left; }
+.contact-list li{
+  margin-bottom: 1em;
+}
+
+.contact-list strong{
+  text-decoration: underline;
+}
+
 
 .placard{
+  color: var(--placard-text);
   height: 100px;
   max-width: 800px;
   display: flex;
   flex-direction: row;
-border: 3px solid blue; }
+border: 3px solid var(--placard-border); }
 
 .placard-name{
+  background-color: var(--placard-bg);
+  color: var(--placard-text);
   display: flex;
   align-items: center;
-  border-right: 3px solid;
+  border-right: 3px solid var(--placard-border);
   width: 25%;
   padding: 10px 0 10px 10px;
-  font-size: 2em; }
+font-size: 2em; }
 
 .placard-name.write{
   padding: 10px;
   font-size: 1.8em;
   border-right: 1px solid var(ink-blue_text);
   background-color: var(--paper-pad);
-  color: var(--ink-blue_text); }
+color: var(--ink-blue_text); }
 
 .placard-quote{
+  width: 100%;
+  background-color: lavender;
   display: flex;
   align-items: center;
-  font-size: 1em;
-  padding: 20px; } 
+  font-size: 1.2em;
+  padding: 20px;
+} 
+
 .placard-quote.write{
-  color: var(--ink-blue_text); }
+color: var(--ink-blue_text); }
 
 .log-title{
   display: flex;
   flex-direction: row;
-  align-items: center; }
+align-items: center; }
 
 .rss-link{
   max-height: 2em;
-  margin-left: 18px; }
+margin-left: 18px; }
 
 .log{
   max-width: 82%;
   font-size: 1.3em;
-  margin: 40px auto 40px auto; }
+margin: 40px auto 40px auto; }
 
 .log-li{
-  margin-bottom: 1.3em; }
+margin-bottom: 1.3em; }
 
 /* Library
 --------*/
@@ -146,62 +333,62 @@ border: 3px solid blue; }
   background-repeat: repeat-x repeat-y;
   background-size: contain;
   color: white;
-  font-family: IntervalBook; }
+font-family: IntervalBook; }
 
 .library {
   margin-left: auto;
   margin-right: auto;
   max-width: 90%;
-  padding: 1em; }
+padding: 1em; }
 
 .library-shelf {
   max-width: 82%;
   margin: auto;
   margin-bottom: 40px; 
   padding-bottom: 20px;
-  border: white dotted 1px; }
+border: white dotted 1px; }
 
 .book-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px; }
+grid-gap: 10px; }
 
 .library-shelf_title {
   padding: 0.5em;
   width: 100%;
-  font-size: 2em; }
+font-size: 2em; }
 
 .library-book {
   display: flex;
   flex-direction: column; 
   justify-content: center; 
-  align-items: center; }
+align-items: center; }
 
 .library-book_cover{
   border: white dotted 1px;
-  max-width: 200px; }
+max-width: 200px; }
 
 figcaption {
   color: white; 
   display: block;
   font-size: 0.9em;
   padding: 10px;   	
-  text-align: center; }
+text-align: center; }
 figcaption.write{
-  color: var(--orange-dust); }
+color: var(--orange-dust); }
 
 .library-notes {
   background-image: url(../images/dark-sky.jpg);
   background-repeat: repeat-x repeat-y;
   background-size: cover;
   color: white;
-  font-family: IntervalBook; }
+font-family: IntervalBook; }
 
 .notes-thumbnail {
   float: left; 
   width: 200px;
   margin-top: 1.5em;
-  margin-right: 1em; }
+margin-right: 1em; }
 
 .notes{
   min-height: 400px;
@@ -211,43 +398,10 @@ figcaption.write{
   border: 1px dashed white;
   padding-left: 1.5em;
   padding-right: 1.5em;
-  font-size: 1.5em; }
+font-size: 1.5em; }
 
-/*Mosaic of Pages
-----------------*/
-.my-mosaic{
-  max-width: 82%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-grid-gap: 20px; }
 
-.tile{
-  height: 100px; 
-  display: flex;
-  flex-direction: row;
-border: 3px solid; }  
 
-.tile-link{
-  display: block;
-  text-decoration: none;
-color: none; }  
-
-.tile-name{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-right: 3px solid;
-  font-size: 1.5em;
-  font-style: italic;
-  padding: 10px;
-line-height: 1.3em; } 
-
-.tile-description{
-  display: flex;
-  align-items: center;
-  font-size: 1.2em;
-padding: 20px; } 
 
 /* Writing
 ---------*/
@@ -256,26 +410,26 @@ padding: 20px; }
   background-color: aliceBlue;
   font-size: 1.5em;
   line-height: 1.5em;
-  text-align: left; }
-  @media (max-width: 667px){
-	  .writing{
-		  font-size: 1em;
-	  }
+text-align: left; }
+@media (max-width: 667px){
+  .writing{
+    font-size: 1em;
   }
-							    
+}
+
 .writing-collection {
   width: 75%;
-  margin: 40px auto auto 40px; }
+margin: 40px auto auto 40px; }
 
 .writing-name {
- font-size: 1.2em;
- color: var(--orange-dust);
- text-decoration: none; }
- @media (max-width: 667px){
-	 .writing-name {
-		 font-size: 1.1em;
-	 }
- }
+  font-size: 1.2em;
+  color: var(--orange-dust);
+text-decoration: none; }
+@media (max-width: 667px){
+  .writing-name {
+    font-size: 1.1em;
+  }
+}
 
 .writing-piece_titlebox{
   min-height: 75px;
@@ -284,119 +438,39 @@ padding: 20px; }
   font-size: 2.5em;
   margin-top: 1em;
   margin-bottom: 5px;
-  border-bottom: 2px solid var(--ink-blue_text); }	
-  @media (max-width: 667px) {
-	  .writing-piece_titlebox {
-		  min-height: 0;
-		  font-size: 1.7em;
-	  }
+border-bottom: 2px solid var(--ink-blue_text); }	
+@media (max-width: 667px) {
+  .writing-piece_titlebox {
+    min-height: 0;
+    font-size: 1.7em;
   }
+}
 
 .writing-piece_title-wedge{
   width: 1%;
   border-top: 2px solid #4ec3d2;
   margin-right: 10px;
   border-right: 2px solid #4ec3d2;
-  background-color: rgba(77,  194,  209, 0.31); }
-  
+background-color: rgba(77,  194,  209, 0.31); }
+
 .writing-piece_title{
   padding-top: 5px;
   color: var(--orange-dust);
-  line-height: 1.5em; }
+line-height: 1.5em; }
 
 .writing-piece_byline{
   text-align: right;
   font-size: 1em;
   margin: 0;
-  color: var(--purple-dusk); }
+color: var(--purple-dusk); }
 
 .writing-piece{
   word-spacing: -0.2em;
-  margin-top: 2em; }
+margin-top: 2em; }
 
 
 .writing-piece_accent{
-  color: var(--orange-dust); }
-
-  
-
-/*  Colors!  
- ************/
-
-.alice-blue_border{
-border-color: aliceBlue; }
-
-.alice-blue_background{
-background-color: aliceBlue; }
-
-.ink-blue_border{
-border-color: #4ec3d2; }
-
-.ink-blue_text{
-color: #5fbcc8; }
-
-.butter-yellow_border{
-border-color: rgba(211, 200, 103, 1); }
-
-.soft-yellow_background{
-background-color: #e8e8bd; }
-
-.dark-caramel{
-color: #7e5a2c; }
-
-.sherbet{
-color: #e79e0c; }
-
-.sherbet_border{
-border-color: #d1a54d; }
-
-.soft-sherbet_background{
-background-color: rgba(209, 165, 77, 0.26); }
-
-.friedemann-green_border{
-border-color: #5fb95a; }
-
-.friese-green_background{
-background-color: #70ff70; }
-
-.friedemann-green_text{
-color: green; }
-
-.rituals_border{
-color: #000582; }
-
-.rituals_text{
-color: #000582; }
-
-.rituals_background{
-background-color: rgba(0, 16, 130, 0.44); }
-
-.book-ribbon_border{
-border-color: #b23535; }
-
-.book-ribbon_background{
-background-color: rgba(179, 53, 53, 0.29); }
-
-.friendship-orange_border{
-border-color: #a66400; }
-.friendship-orange_background{
-background-color:  rgba(255, 165, 0, 0.61); }
-
-.friendship-orange_text{
-color: #a66400; }
-
-.book-ribbon_text{
-color: #b23535; }
-
-.link-blue_border{
-border-color: blue; }
-
-.link-blue_background{
-background-color: rgba(0,  0,  255, 0.28); }
-
-.link-blue_text{
-color: blue; }
-
+color: var(--orange-dust); }
 
 /* Media Queries BABYEEE!
  ************************/
@@ -421,7 +495,7 @@ color: blue; }
   height: auto; }
   .placard-name{
     width: auto;
-    border-right: none; }
+  border-right: none; }
   .my-mosaic{
   grid-template-columns: 1fr; }
 
@@ -430,3 +504,11 @@ color: blue; }
 
   .book-grid {
   grid-template-columns: 1fr; }
+
+  /* Don't know what these are for anymore! */
+
+  .invisible-helper{
+    width: 0;
+    height: 200px;
+    float: left;
+  }
