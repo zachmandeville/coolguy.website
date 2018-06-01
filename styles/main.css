@@ -50,13 +50,12 @@ body{
   margin-right: auto;
   margin-left: auto;
   padding: 0 20px;
-font-size: 1.3em; }
+  font-size: 1.3em; 
+}
 
 .intro-message h1 {
   margin-top: 1em;
   background-color: var(--placard-bg);
-  line-height: 1.5em;
-  font-size: 1.2em; 
 }
 
 button {
@@ -79,9 +78,16 @@ ul,li{
 /*Mosaic of Pages: 
 The homepage sitemap, if you will
 ----------------*/
-.my-mosaic{
-  max-width: 82%;
+#site-map{
+  max-width: 80%;
   margin: auto;
+}
+
+#site-map h1{
+  font-size: 1.5em;
+}
+
+.my-mosaic{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px; 
@@ -273,6 +279,7 @@ list-style: circle; }
 
 
 .placard{
+  background-color: lavender;
   color: var(--placard-text);
   height: 100px;
   max-width: 800px;
@@ -298,8 +305,6 @@ font-size: 2em; }
 color: var(--ink-blue_text); }
 
 .placard-quote{
-  width: 100%;
-  background-color: lavender;
   display: flex;
   align-items: center;
   font-size: 1.2em;
