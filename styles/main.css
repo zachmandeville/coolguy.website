@@ -15,6 +15,46 @@ src: url('../interval/IntervalSlanted.otf'); }
   font-family: IntervalBoldSlanted;
 src: url('../interval/IntervalBoldSlanted.otf'); }
 
+@font-face {
+    font-family: 'mononoki';
+    src: url('fonts/mononoki/mononoki-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/mononoki/mononoki-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/mononoki/mononoki-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/mononoki/mononoki-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mononoki';
+    src: url('fonts/mononoki/mononoki-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/mononoki/mononoki-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/mononoki/mononoki-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/mononoki/mononoki-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mononoki';
+    src: url('fonts/mononoki/mononoki-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/mononoki/mononoki-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/mononoki/mononoki-Italic.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/mononoki/mononoki-Italic.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'mononoki';
+    src: url('fonts/mononoki/mononoki-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/mononoki/mononoki-BoldItalic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/mononoki/mononoki-BoldItalic.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/mononoki/mononoki-BoldItalic.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: bold;
+    font-style: italic;
+}
 
 /* Global Styles */
 
@@ -25,10 +65,11 @@ body{
   background-color: var(--bg-color);
   color: var(--main-text);
   margin: 0;
-  font-family: IntervalBook;
+  font-family: mononoki;
   font-size: 16px;
   font-kerning: normal;
   padding: 10px; 
+  box-sizing: border-box;
 }
 
 #guiding-quote{
@@ -216,7 +257,6 @@ The homepage sitemap, if you will
   border-color: var(--links-mosaic-border); 
 }
 
-
 .breadcrumb{
   text-align: right; 
   font-size: 0.8em; 
@@ -224,14 +264,22 @@ The homepage sitemap, if you will
   margin-right: 10px; 
 }
 
-.cool-link{
-text-decoration: none; }
-.cool-link.writing{
+.breadcrumb a{
+text-decoration: none; 
+}
+
+.breadcrumb a.writing{
   font-size: inherit;
-color: var(--orange-dust); }
+  color: var(--writing-link); 
+}
 
 .left {
-text-align: left; }
+  text-align: left;
+}
+
+.centered{
+  text-align: center;
+}
 
 .container {
   position: relative;
@@ -245,13 +293,11 @@ box-sizing: border-box; }
 }
 
 
-.centered{
-text-align: center; }
-
 .centered-image {
   display: block;
   margin-left: auto;
-margin-right: auto; }
+  margin-right: auto;
+}
 
 .dancing-zach {
   max-width: 300px;
@@ -261,14 +307,17 @@ margin-right: auto; }
   bottom: 0;
   display: block;
   margin: 0 10px 10px 0;
-shape-outside: circle(50%); }
+  shape-outside: circle(50%);
+}
 
 #pgp, #ssb{
   background-color: var(--placard-bg);
 }
+
 .contact-list{
   font-size: 1em;
-list-style: circle; }
+  list-style: circle; 
+}
 
 .contact-list li{
   margin-bottom: 1em;
@@ -277,7 +326,6 @@ list-style: circle; }
 .contact-list strong{
   text-decoration: underline;
 }
-
 
 .placard{
   background-color: lavender;
@@ -297,6 +345,7 @@ list-style: circle; }
 .placard h1{
   height: 100%;
   margin-top: 0;
+  margin-bottom: 0;
   background-color: var(--placard-bg);
   color: var(--placard-text);
   display: flex;
@@ -332,19 +381,23 @@ list-style: circle; }
 .log-title{
   display: flex;
   flex-direction: row;
-align-items: center; }
+  align-items: center; 
+}
 
 .rss-link{
   max-height: 2em;
-margin-left: 18px; }
+  margin-left: 18px; 
+}
 
 .log{
   max-width: 82%;
   font-size: 1.3em;
-margin: 40px auto 40px auto; }
+  margin: 40px auto 40px auto; 
+}
 
 .log-li{
-margin-bottom: 1.3em; }
+ margin-bottom: 1.3em; 
+ }
 
 /* Library
 --------*/
@@ -428,12 +481,13 @@ font-size: 1.5em; }
 
 .writing{
   background-color: aliceBlue;
+  font-size: 20px;
 }
 
 .writing-collection {
+  font-size: 1.3em;
   width: 80%;
   margin: 2em auto auto 2em; 
-  font-size: 1.3em;
 }
 
 .writing-collection li{
@@ -442,45 +496,41 @@ font-size: 1.5em; }
 }
 
 .writing-collection a{
+  text-decoration: none;
+  font-size: 1.05em;
   color: var(--writing-link);
-}
-
-.writing-name {
-  font-size: 1.2em;
-  color: var(--orange-dust);
-text-decoration: none; }
-@media (max-width: 667px){
-  .writing-name {
-    font-size: 1.1em;
-  }
 }
 
 .writing-piece_titlebox{
   min-height: 75px;
   display: flex; 
-  border-left: 2px solid var(--ink-blue_text);
-  font-size: 2.5em;
-  margin-top: 1em;
+  border-left: 2px solid var(--writing-border);
+  color: var(--writing-link);
   margin-bottom: 5px;
-border-bottom: 2px solid var(--ink-blue_text); }	
+  border-bottom: 2px solid var(--writing-border); 
+}	
 @media (max-width: 667px) {
   .writing-piece_titlebox {
     min-height: 0;
-    font-size: 1.7em;
   }
 }
 
 .writing-piece_title-wedge{
   width: 1%;
-  border-top: 2px solid #4ec3d2;
+  border-top: 2px solid var(--writing-border);
   margin-right: 10px;
-  border-right: 2px solid #4ec3d2;
-background-color: rgba(77,  194,  209, 0.31); }
+  border-right: 2px solid var(--writing-border);
+  background-color: var(--writing-bg); 
+}
 
-.writing-piece_title{
-  padding-top: 5px;
-  color: var(--orange-dust);
-line-height: 1.5em; }
+.writing-piece_titlebox h1{
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
 
 .writing-piece_byline{
   text-align: right;
@@ -488,9 +538,12 @@ line-height: 1.5em; }
   margin: 0;
 color: var(--purple-dusk); }
 
-.writing-piece{
+.writing article{
   word-spacing: -0.2em;
-margin-top: 2em; }
+  margin-top: 2em;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
 
 
 .writing-piece_accent{
@@ -515,16 +568,22 @@ color: var(--orange-dust); }
   float: none; }
 
   .placard{
+    position: relative;
     flex-direction: column;
-  height: auto; }
-  .placard-name{
+    height: auto; 
+  }
+  .placard h1{
+    padding: 0.5em;
+    max-width: 100%;
+    border-right: none; 
+    border-bottom: 3px solid var(--writing-border);
+  }
+  .placard p{
+    padding: 1em;
     width: auto;
-  border-right: none; }
+  }
   .my-mosaic{
   grid-template-columns: 1fr; }
-
-  .tile-description{
-  font-size: 1em; }
 
   .book-grid {
   grid-template-columns: 1fr; }
