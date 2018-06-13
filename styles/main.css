@@ -17,30 +17,30 @@ src: url('../interval/IntervalBoldSlanted.otf'); }
 
 @font-face {
     font-family: 'mononoki';
-    src: url('fonts/mononoki/mononoki-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/mononoki/mononoki-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/mononoki/mononoki-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-         url('fonts/mononoki/mononoki-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+    src: url('/styles/fonts/mononoki/mononoki-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/styles/fonts/mononoki/mononoki-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/styles/fonts/mononoki/mononoki-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('/styles/fonts/mononoki/mononoki-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'mononoki';
-    src: url('fonts/mononoki/mononoki-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/mononoki/mononoki-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/mononoki/mononoki-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-         url('fonts/mononoki/mononoki-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+    src: url('/styles/fonts/mononoki/mononoki-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/styles/fonts/mononoki/mononoki-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/styles/fonts/mononoki/mononoki-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('/styles/fonts/mononoki/mononoki-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'mononoki';
-    src: url('fonts/mononoki/mononoki-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/mononoki/mononoki-Italic.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/mononoki/mononoki-Italic.woff') format('woff'), /* Pretty Modern Browsers */
-         url('fonts/mononoki/mononoki-Italic.ttf')  format('truetype'); /* Safari, Android, iOS */
+    src: url('/styles/fonts/mononoki/mononoki-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/styles/fonts/mononoki/mononoki-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/styles/fonts/mononoki/mononoki-Italic.woff') format('woff'), /* Pretty Modern Browsers */
+         url('/styles/fonts/mononoki/mononoki-Italic.ttf')  format('truetype'); /* Safari, Android, iOS */
     font-weight: normal;
     font-style: italic;
 
@@ -48,10 +48,10 @@ src: url('../interval/IntervalBoldSlanted.otf'); }
 
 @font-face {
     font-family: 'mononoki';
-    src: url('fonts/mononoki/mononoki-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/mononoki/mononoki-BoldItalic.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/mononoki/mononoki-BoldItalic.woff') format('woff'), /* Pretty Modern Browsers */
-         url('fonts/mononoki/mononoki-BoldItalic.ttf')  format('truetype'); /* Safari, Android, iOS */
+    src: url('/styles/fonts/mononoki/mononoki-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/styles/fonts/mononoki/mononoki-BoldItalic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/styles/fonts/mononoki/mononoki-BoldItalic.woff') format('woff'), /* Pretty Modern Browsers */
+         url('/styles/fonts/mononoki/mononoki-BoldItalic.ttf')  format('truetype'); /* Safari, Android, iOS */
     font-weight: bold;
     font-style: italic;
 }
@@ -306,8 +306,7 @@ box-sizing: border-box; }
   position: relative;
   bottom: 0;
   display: block;
-  margin: 0 10px 10px 0;
-  shape-outside: circle(50%);
+  margin: 0 1em 1em 0;
 }
 
 #pgp, #ssb{
@@ -545,9 +544,43 @@ color: var(--purple-dusk); }
   line-height: 1.5em;
 }
 
-
 .writing-piece_accent{
-color: var(--orange-dust); }
+color: var(--orange-dust);
+}
+
+/*
+Funwater Awesome Library
+*/
+.note{
+  font-size: 0.7em;
+}
+#zine-grid{
+  display: grid;
+  width: 80%;
+  margin-top: 1em;
+  grid-template-columns: 1fr 1fr;
+  grid-grap: 1em;
+  margin: auto;
+}
+  @media (max-width: 667px){
+    #zine-grid{
+      grid-template-columns: 1fr;
+    }
+  }
+
+#zine-grid li{
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#zine-grid img{
+  max-width: auto;
+  max-height: 500px;
+}
+
 
 /* Media Queries BABYEEE!
  ************************/
